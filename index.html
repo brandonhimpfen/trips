@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Solo Travel Tours and Cruises</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container mt-5">
+  <h2 class="mb-4"><strong>No or Low Single Supplements.</strong> The Ultimate List of Tours & Cruises for Solo Travelers.</h2>
+<p>Discover the first comprehensive listing of solo travel trips with zero to 20% single supplements—completely independent of affiliate marketing. This free resource is designed to empower solo travelers with unbiased access to tours and cruises that prioritize affordability and transparency, without the influence of tour operator commissions.</p>
+        <!-- Filter Section -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <input id="searchKeywords" type="text" class="form-control" placeholder="Search by keywords...">
+            </div>
+            <div class="col-md-4">
+                <select id="filterCountry" class="form-control">
+                    <option value="">Filter by country</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Scandinavia">Scandinavia</option>
+                    <option value="Egypt">Egypt</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select id="filterDuration" class="form-control">
+                    <option value="">Filter by duration</option>
+                    <option value="7">7 days</option>
+                    <option value="14">14 days</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="row" id="tripGrid">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+    </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
