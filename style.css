@@ -1,5 +1,8 @@
 .card img {
-            height: 200px;
-            -o-object-fit: cover;
-               object-fit: cover;
-        }
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.brand {
+  margin-bottom: 0.5em;
+}
