@@ -1,8 +1,53 @@
-.card img {
-  height: 200px;
-  -o-object-fit: cover;
-  object-fit: cover;
+:root {
+    --font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    --font-serif: Georgia, serif;
+    --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
-.brand {
-  margin-bottom: 0.5em;
+body {
+    font-family: var(--font-sans);
 }
+        body { background-color: #f8f9fa; }
+        .trip-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+        .trip-card:hover { box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .trip-image { width: 100%; height: 200px; -o-object-fit: cover; object-fit: cover; }
+        .trip-content { padding: 15px; }
+        .favorite-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+        }
+        .favorite-btn svg { width: 26px; height: 26px; stroke: #dc3545; fill: transparent; stroke-width: 2px; transition: fill 0.2s ease; }
+        .favorite-btn.active svg { fill: #dc3545; }
+        .favorite-filter { display: flex; align-items: center; margin-bottom: 1rem; }
+        header { background: #2D9CDB; border-bottom: none; }
+        .navbar-nav .nav-link {
+    font-weight: 600 !important;
+    margin-right: 1rem !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white !important;
+    display: inline-block;
+}
+.navbar-nav .nav-item:first-child .nav-link {
+    margin-left: 1rem !important;
+}
+    .navbar-nav .nav-link:last-child {
+        margin-right: 0;
+    }
